@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+body{
+    background-color: rgb(201, 199, 199);
+}
+@font-face {
+    font-family: myFont;
+    src: url(./myFont/iCiel\ Crocante.otf);
+}
+.text-orange{
+    color: rgb(214, 146, 19);
+    font-weight: bold;
+    font-family: system-ui;
+    font-style: italic;
+}
+.main-web{
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: red;
+    width: 80%;
+    height: 52rem;
+    background-image: url(./img/max.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.layer-text p{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: myFont;
+    font-size: 60px;
+    transform: rotate(338deg);
+}
+.layer-text p.p1{
+    top: 6rem;
+    left: 58rem;
+}
+.layer-text p.p2{
+    top: 10rem;
+    left: 69rem;
+}
+.left-web{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+.left-web::after{
+    content: '';
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+.left-text{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}   
+.left-text .title{
+    margin: 2rem auto;
+    width: 80%;
+    padding: 5px;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 10px solid red;
+    margin-bottom: 1rem;
+}
+.left-text .content{
+    padding: 10px;
+}
+.left-text .item-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+}
+.left-text .item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.left-text .item-text{
+    flex: 1;
+    padding-left: 15px;
+}
+.left-text .item-text p{
+    color: white;
+    text-align: justify;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.mater{
+    font-size: 30px;
+    font-family: system-ui;
+}
+.item-text span{
+    font-family: system-ui;
+}
+.content-item{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.title span{
+    font-family: system-ui;
+    font-size: 35px;
+}
+
